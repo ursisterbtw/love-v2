@@ -19,7 +19,7 @@ async function main() {
   );
 
   let transaction = {
-    to: "0x079A733703745fb6B3499677e054eb96a1A697A9",
+    to: "0xDestinationAddress69",
     value: Utils.parseEther("0.0"),
     gasLimit: "21000",
     maxPriorityFeePerGas: Utils.parseUnits("5", "gwei"),

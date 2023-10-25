@@ -2,7 +2,7 @@ const { Alchemy, Network, Wallet, Utils } = require("alchemy-sdk");
 const dotenv = require("dotenv");
 
 dotenv.config();
-const { API_KEY, PRIVATE_KEYS } = process.env;
+const { API_KEY, PRIVATE_KEYS } = process.env; // create .env and store pks under PRIVATE_KEYS variable, separated by commas (no spaces), use alchemy api key for API_KEY
 
 const settings = {
   apiKey: API_KEY,
@@ -19,8 +19,8 @@ async function sendTransaction(wallet) {
   );
 
   let transaction = {
-    to: "0x4A2d4601AC4348248cA6A5AcabC9cFFd57994DaE",
-    value: Utils.parseEther("0.0"),
+    to: "0xDestinationAddress69", // adjust
+    value: Utils.parseEther("0.0"), // adjust
     gasLimit: "21000",
     maxPriorityFeePerGas: Utils.parseUnits("1", "gwei"),
     maxFeePerGas: Utils.parseUnits("20", "gwei"),
